@@ -36,7 +36,6 @@
       font-size: 45px;
       max-width: 90%;
       margin: 0 auto 32px;
-      text-align: center;
     }
 
     @media (max-width: 756px) {
@@ -101,10 +100,6 @@
       font-size: 25px;
       font-weight: 500;
       line-height: 1;
-
-      @media (max-width: 567px) {
-        text-align: center;
-      }
     }
 
     &__list {
@@ -116,7 +111,7 @@
 
       @media (max-width: 567px) {
         max-width: 100%;
-        justify-content: center;
+        justify-content: flex-start;
       }
     }
 

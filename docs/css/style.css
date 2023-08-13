@@ -334,7 +334,6 @@ main {
     font-size: 45px;
     max-width: 90%;
     margin: 0 auto 32px;
-    text-align: center;
   }
 }
 @media (max-width: 756px) {
@@ -401,11 +400,6 @@ main {
   font-weight: 500;
   line-height: 1;
 }
-@media (max-width: 567px) {
-  .hero .skills-hero__type-title {
-    text-align: center;
-  }
-}
 .hero .skills-hero__list {
   display: flex;
   flex-wrap: wrap;
@@ -416,7 +410,7 @@ main {
 @media (max-width: 567px) {
   .hero .skills-hero__list {
     max-width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 .hero .skills-hero__item {
