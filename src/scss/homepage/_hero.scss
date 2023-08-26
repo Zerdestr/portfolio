@@ -1,4 +1,14 @@
 .hero {
+  margin-top: 175px;
+
+  @media (max-width: 991px) {
+    margin-top: 135px;
+  }
+
+  @media (max-width: 756px) {
+    margin-top: 90px;
+  }
+
   &__about {
     display: flex;
     justify-content: space-between;
@@ -31,6 +41,12 @@
     line-height: 1;
     max-width: 480px;
     margin-bottom: 32px;
+    opacity: 0;
+
+    &._active {
+      opacity: 1;
+      animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.25s both;
+    }
 
     @media (max-width: 991px) {
       font-size: 45px;
@@ -49,6 +65,12 @@
 
   &__text {
     font-size: 32px;
+    opacity: 0;
+
+    &._active {
+      opacity: 1;
+      animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+    }
 
     p:not(:last-child) {
       margin-bottom: 40px;
@@ -56,6 +78,15 @@
 
     @media (max-width: 567px) {
       font-size: 25px;
+    }
+  }
+
+  &__image {
+    opacity: 0;
+
+    &._active {
+      opacity: 1;
+      animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
     }
   }
 
@@ -71,6 +102,12 @@
       font-weight: 500;
       line-height: 1;
       margin-bottom: 50px;
+      opacity: 0;
+
+      &._active {
+        opacity: 1;
+        animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
 
       @media (max-width: 567px) {
         font-size: 30px;
@@ -81,6 +118,12 @@
       display: flex;
       max-width: 50%;
       justify-content: space-between;
+      opacity: 0;
+
+      &._active {
+        opacity: 1;
+        animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.25s both;
+      }
 
       &:not(:last-child) {
         margin-bottom: 50px;

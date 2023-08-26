@@ -1,5 +1,5 @@
 import gulp from "gulp";
-// Импорт путей
+
 import { path } from "./gulp/config/path.js";
 
 import { plugins } from "./gulp/config/plugins.js";
@@ -29,6 +29,7 @@ function watcher() {
   gulp.watch(path.watch.js, js);
   gulp.watch(path.watch.images, images);
 }
+
 
 export { svgSpriteTask }
 

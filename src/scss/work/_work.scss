@@ -1,5 +1,14 @@
 .work {
   margin-bottom: 30px;
+   margin-top: 175px;
+
+  @media (max-width: 991px) {
+    margin-top: 135px;
+  }
+
+  @media (max-width: 756px) {
+    margin-top: 90px;
+  }
 
   &__title {
     font-size: 60px;
@@ -7,6 +16,12 @@
     line-height: 1;
     max-width: 480px;
     margin-bottom: 50px;
+    opacity: 0;
+
+      &._active {
+        opacity: 1;
+        animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)  both;
+      }
 
     @media (max-width: 991px) {
       font-size: 45px;
@@ -25,6 +40,7 @@
   &__item {
     display: flex;
     justify-content: space-between;
+    column-gap: 15px;
 
     &:not(:last-child) {
       padding-bottom: 40px;
@@ -42,10 +58,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 40%;
     width: 100%;
-
+    gap: 15px;
+    
     @media (max-width: 567px) {
+      align-items: flex-end;
       flex-direction: row;
       max-width: 100%;
     }
@@ -55,6 +72,16 @@
     font-size: 40px;
     font-weight: 500;
     line-height: 1;
+    opacity: 0;
+
+     &._active {
+        opacity: 1;
+        animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .25s both;
+      }
+
+ @media (max-width: 991px) {
+      font-size: 35px;
+    }
 
     @media (max-width: 567px) {
       font-size: 30px;
@@ -66,8 +93,26 @@
     display: block;
     max-width: max-content;
 
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .50s both;
+
     @media (max-width: 567px) {
       font-size: 25px;
+    }
+  }
+
+  &__image {
+    max-width: 50%;
+    max-height: 365px;
+    height: 100%;
+    opacity: 0;
+    
+     &._active {
+        opacity: 1;
+        animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) .25s  both;
+      }
+
+      @media (max-width: 567px) {
+      max-width: 100%;
     }
   }
 }
