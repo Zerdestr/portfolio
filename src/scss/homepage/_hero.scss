@@ -83,10 +83,18 @@
 
   &__image {
     opacity: 0;
+    max-height: 700px;
+    display: flex;
+    justify-content: space-evenly;
 
     &._active {
       opacity: 1;
       animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+    }
+
+    img {
+      max-height: 100%;
+      object-fit: contain;
     }
   }
 

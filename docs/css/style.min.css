@@ -419,10 +419,17 @@ main {
 }
 .hero__image {
   opacity: 0;
+  max-height: 700px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .hero__image._active {
   opacity: 1;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+.hero__image img {
+  max-height: 100%;
+  object-fit: contain;
 }
 .hero .skills-hero {
   margin-bottom: 50px;
@@ -604,6 +611,36 @@ main {
   max-height: 365px;
   height: 100%;
   opacity: 0;
+  position: relative;
+}
+.work__image:hover::after, .work__image:hover::before {
+  opacity: 1;
+}
+.work__image::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(24, 23, 23, 0.2);
+  transition: opacity 0.2s ease-in-out;
+}
+.work__image::before {
+  opacity: 0;
+  content: ">";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  font-size: 50px;
+  color: #f3f3f3;
+  background-color: #181717;
+  border-radius: 50%;
+  padding: 5px;
+  transition: opacity 0.2s ease-in-out;
 }
 .work__image._active {
   opacity: 1;
