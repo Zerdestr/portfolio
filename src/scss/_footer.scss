@@ -6,7 +6,7 @@
   }
 
   &__title {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
     line-height: 1;
     margin-bottom: 50px;
@@ -18,7 +18,8 @@
     }
 
     @media (max-width: 567px) {
-      font-size: 35px;
+      font-size: 30px;
+      margin-bottom: 35px;
     }
   }
 
@@ -42,7 +43,7 @@
   }
 
   &__left-link {
-    font-size: 32px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -84,7 +85,7 @@
   }
 
   &__social-link {
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     column-gap: 10px;

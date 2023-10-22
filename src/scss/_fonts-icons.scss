@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../files/fonts-icons/icomoon.eot?njb8cv');
-  src:  url('../files/fonts-icons/icomoon.eot?njb8cv#iefix') format('embedded-opentype'),
-    url('../files/fonts-icons/icomoon.ttf?njb8cv') format('truetype'),
-    url('../files/fonts-icons/icomoon.woff?njb8cv') format('woff'),
-    url('../files/fonts-icons/icomoon.svg?njb8cv#icomoon') format('svg');
+  src:  url('../files/fonts-icons/icomoon.eot?60rzl6');
+  src:  url('../files/fonts-icons/icomoon.eot?60rzl6#iefix') format('embedded-opentype'),
+    url('../files/fonts-icons/icomoon.ttf?60rzl6') format('truetype'),
+    url('../files/fonts-icons/icomoon.woff?60rzl6') format('woff'),
+    url('../files/fonts-icons/icomoon.svg?60rzl6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
+.icon-arrow_forward:before {
+  content: "\e905";
+}
+.icon-meil:before {
   content: "\e900";
 }
 .icon-document:before {
